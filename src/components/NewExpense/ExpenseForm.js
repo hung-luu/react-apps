@@ -22,6 +22,11 @@ const ExpenseForm = () => {
         //     ...userInput,
         //     enteredTitle: event.target.value
         // })
+
+        // safer way to operate on the latest state snapshot
+        // setUserInput((prevState) => {
+        //     return { ...prevState, enteredTitle: event.target.value }
+        // })
     };
 
     const amountChangeHandler = (event) => {
@@ -32,6 +37,11 @@ const ExpenseForm = () => {
         //     ...userInput,
         //     enteredAmount: event.target.value
         // })
+
+        // safer way to operate on the latest state snapshot
+        // setUserInput((prevState) => {
+        //     return { ...prevState, enteredAmount: event.target.value }
+        // })
     };
 
     const dateChangeHandler = (event) => {
@@ -41,6 +51,11 @@ const ExpenseForm = () => {
         // setUserInput({
         //     ...userInput,
         //     enteredDate: event.target.value
+        // })
+
+        // safer way to operate on the latest state snapshot
+        // setUserInput((prevState) => {
+        //     return { ...prevState, enteredDate: event.target.value }
         // })
     };
 
