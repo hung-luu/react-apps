@@ -26,6 +26,11 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = expense => {
+    console.log("Currently in App.js")
+    console.log(expense)
+  }
+
   // React.createElement() way of writing JSX
   // return React.createElement(
   //   'div',
@@ -36,7 +41,7 @@ const App = () => {
 
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses
         expenses={expenses}
       />
