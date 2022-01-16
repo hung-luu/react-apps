@@ -4,21 +4,25 @@ import NewExpense from './components/NewExpense/NewExpense';
 
 const TEST_EXPENSES = [
   {
+    id: "e1",
     title: "iPhone 13 Pro",
     amount: 999.99,
     date: new Date(2021, 9, 7),
   },
   {
+    id: "e2",
     title: "Macbook Pro",
     amount: 1999.99,
     date: new Date(2021, 9, 25),
   },
   {
+    id: "e3",
     title: "Carhartt Work Pants",
     amount: 44.99,
     date: new Date(2021, 9, 27),
   },
   {
+    id: "e4",
     title: "McDonald's Spicy Chicken Sandwich",
     amount: 5.99,
     date: new Date(2021, 10, 3),
