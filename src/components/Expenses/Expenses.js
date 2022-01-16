@@ -9,13 +9,16 @@ const Expenses = (props) => {
 
     const saveFilterDataHandler = (selectedYear) => {
         setFilteredYear(selectedYear)
-        console.log(selectedYear)
+        // console.log(selectedYear)
     }
 
     return (
         <Card className="expenses">
-            <ExpensesFilter selected={filteredYear} onSaveFilterData={saveFilterDataHandler} />
-            {props.expenses.map((expense) => (
+            <ExpensesFilter
+                selected={filteredYear}
+                onSaveFilterData={saveFilterDataHandler}
+            />
+            {props.items.map((expense) => (
                 <ExpenseItem
                     title={expense.title}
                     amount={expense.amount}

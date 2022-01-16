@@ -1,35 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from './components/NewExpense/NewExpense';
 
-const App = () => {
-  const expenses = [
-    {
-      title: "iPhone 13 Pro",
-      amount: 999.99,
-      date: new Date(2021, 9, 7),
-    },
-    {
-      title: "Macbook Pro",
-      amount: 1999.99,
-      date: new Date(2021, 9, 25),
-    },
-    {
-      title: "Carhartt Work Pants",
-      amount: 44.99,
-      date: new Date(2021, 9, 27),
-    },
-    {
-      title: "McDonald's Spicy Chicken Sandwich",
-      amount: 5.99,
-      date: new Date(2021, 10, 3),
-    },
-  ];
+const TEST_EXPENSES = [
+  {
+    title: "iPhone 13 Pro",
+    amount: 999.99,
+    date: new Date(2021, 9, 7),
+  },
+  {
+    title: "Macbook Pro",
+    amount: 1999.99,
+    date: new Date(2021, 9, 25),
+  },
+  {
+    title: "Carhartt Work Pants",
+    amount: 44.99,
+    date: new Date(2021, 9, 27),
+  },
+  {
+    title: "McDonald's Spicy Chicken Sandwich",
+    amount: 5.99,
+    date: new Date(2021, 10, 3),
+  },
+];
 
-  const addExpenseHandler = expense => {
-    console.log("Currently in App.js")
-    console.log(expense)
-  }
+const App = () => {
+  const [expenses, setExpenses] = useState(TEST_EXPENSES);
+
+  const addExpenseHandler = (expense) => {
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses]
+    });
+  };
 
   // React.createElement() way of writing JSX
   // return React.createElement(
@@ -43,7 +46,7 @@ const App = () => {
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses
-        expenses={expenses}
+        items={expenses}
       />
     </div>
   );
