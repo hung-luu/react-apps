@@ -25,7 +25,7 @@ const TEST_EXPENSES = [
     id: "e4",
     title: "McDonald's Spicy Chicken Sandwich",
     amount: 5.99,
-    date: new Date(2019, 10, 3),
+    date: new Date(2020, 10, 3),
   },
 ];
 
