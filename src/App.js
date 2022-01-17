@@ -7,7 +7,7 @@ const TEST_EXPENSES = [
     id: "e1",
     title: "iPhone 13 Pro",
     amount: 999.99,
-    date: new Date(2021, 9, 7),
+    date: new Date(2022, 9, 7),
   },
   {
     id: "e2",
@@ -19,13 +19,13 @@ const TEST_EXPENSES = [
     id: "e3",
     title: "Carhartt Work Pants",
     amount: 44.99,
-    date: new Date(2021, 9, 27),
+    date: new Date(2020, 9, 27),
   },
   {
     id: "e4",
     title: "McDonald's Spicy Chicken Sandwich",
     amount: 5.99,
-    date: new Date(2021, 10, 3),
+    date: new Date(2019, 10, 3),
   },
 ];
 
