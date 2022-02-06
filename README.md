@@ -1,2 +1,2 @@
 # react-complete-guide
-Repo for React - The Complete Guide Course on Udemy
+Repo for **React - The Complete Guide** Course on Udemy
